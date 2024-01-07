@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Quiz</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="QuizContainer">
-      <div class="QuizHeader">
-        <h2 id="question">Question Text</h2>
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <h2 id="score">0/10</h2>
+        <h2 id="question-number">Question Number</h2>
+        <h2 id="question-text">Question Text</h2>
+      </div>
+      <div class="quiz-body">
         <ul>
           <li>
             <input type="radio" id="a" name="answer" class="answer" /><label

@@ -9,7 +9,7 @@ const QuizData = [
   },
 
   {
-    Question: "Now answer this",
+    Question: "How scary is Hereditary?",
     a: "4",
     b: "3",
     c: "4",
@@ -18,7 +18,8 @@ const QuizData = [
   },
 ];
 
-const question = document.getElementById("question");
+const question_number = document.getElementById("question-number");
+const question_text = document.getElementById("question-text");
 const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
@@ -47,7 +48,8 @@ function GetSelected() {
 
 function LoadQuiz() {
   const currentQuizData = QuizData[currentQuiz];
-  question.innerText = currentQuizData.Question;
+  question_number.innerText = "Question " + (currentQuiz + 1);
+  question_text.innerText = currentQuizData.Question;
   a_text.innerHTML = currentQuizData.a;
   b_text.innerHTML = currentQuizData.b;
   c_text.innerHTML = currentQuizData.c;
