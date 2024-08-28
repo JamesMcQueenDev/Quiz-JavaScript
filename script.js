@@ -2,19 +2,37 @@ const QuizData = [
   {
     Question: "How Many Legs Does a Donkey Have?",
     a: "4",
-    b: "4",
-    c: "4",
-    d: "4",
+    b: "8",
+    c: "2",
+    d: "100",
     Correct: "a",
   },
 
   {
-    Question: "How scary is Hereditary?",
-    a: "4",
-    b: "3",
-    c: "4",
-    d: "3",
-    Correct: "a",
+    Question: "Who wrote Chitty Chitty Bang Bang?",
+    a: "John Le Carre",
+    b: "Charlie Higson",
+    c: "Ian Fleming",
+    d: "JRR Tolkien",
+    Correct: "c",
+  },
+
+  {
+    Question: "Who sings Espresso?",
+    a: "Taylor Swift",
+    b: "Sabrina Carpenter",
+    c: "Billie Eilish",
+    d: "Anne Marie",
+    Correct: "b",
+  },
+
+  {
+    Question: "How many Infinity Stones are there on the Infinity Gauntlet?",
+    a: "2",
+    b: "4",
+    c: "6",
+    d: "8",
+    Correct: "c",
   },
 ];
 
@@ -48,7 +66,7 @@ function GetSelected() {
 
 function LoadQuiz() {
   const currentQuizData = QuizData[currentQuiz];
-  question_number.innerText = "Question " + (currentQuiz + 1);
+  question_number.innerText = "Question " + (currentQuiz + 1) + ":";
   question_text.innerText = currentQuizData.Question;
   a_text.innerHTML = currentQuizData.a;
   b_text.innerHTML = currentQuizData.b;
